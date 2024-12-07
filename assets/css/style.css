@@ -1,5 +1,8 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #pizza {
@@ -9,13 +12,13 @@
 .bar-sup {
     margin-bottom: 15%;
     display: flex;
+    align-items: center;
     justify-content:space-between;
     background-color: #222222;
     height: 100px;
-    width: 100%;
+    padding-left: 10%;
 }
 .bar-sup #green{
-    margin-left: 6%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,7 +38,7 @@
     font-size: 24px;
 }
 
-a {
+header a {
     text-decoration: none;
     display: inline-block;
     padding: 0 10px;
@@ -52,51 +55,133 @@ header ul {
     align-items: center;
 }
 
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: white;
+}
+
+.promocion {
+    background-image: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    position: relative
+}
+
+.promocion #repartidor{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+    top: 0%;
+    left: 0%;
+}
+.promocion #red {
+    position: relative;
+    margin-top: 15px;
+    font-size: 16px;
+    color: red;
+}
+.promocion #white {
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+}
 
 .contenido{
-    width: 100%;
+    background-color: white;
+    width: 50%;
     height: 354px;
-    top:135px;
-    left: 1px;
-}
-.promocion #repartidor{
-    width: 490px;
-    height: 350px;
-    position: absolute;
-    left: 19px;
+    text-align: center;
     border-radius: 5px;
+    padding: 20px;
 }
 
-.contenido {
-    background-color: white;
-    width: 491px;
-    height: 350;
-    border-radius: 5px;
-}
+.contenido a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 10px;
+        color: black; 
+    }
 
 .contenido #piramide {
-    position: absolute;
     width: 92px;
     height: 129px;
-    align-items: center;
+    margin: 10px auto;
     border-radius: 5px;
+}
+
+.contenido #podio {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.men-info {
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 20px;
 }
 
 .bar-inf {
     display: flex;
+    align-items: center;
     justify-content:space-between;
+    flex-direction: row-reverse;
     background-color: #222222;
     height: 150px;
-    width: 100%;    
+    padding: 20px;  
 }
 
-.bar-inf #men-info {
+
+
+.bar-inf #men-info{
     color: white;
-    display: flex;
-    flex-direction: column;
-    list-style-type:none;
-    justify-content: space-around;
+    list-style: none;
     font-size: 16px;
     align-items: center;
-    font-size: 16px;
+}
+.bar-inf #men-info a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+    color: white;  
+}
+
+#icon {
+    display: flex;
+}
+
+#pizza1 {
+    right: 15%;
+    position: absolute;
+    margin: 0.5%;
+}
+
+#green1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: green;
+    font-size: 24px;
+}
+#white1 {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 24px;
+}
+#red1 {
+    display: flex;
+    flex-direction: row;
+    color: red;
+    font-size: 24px;
 }
